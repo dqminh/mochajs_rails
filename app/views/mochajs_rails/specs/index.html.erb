@@ -9,7 +9,7 @@
     <%= javascript_include_tag "sinon-chai" %>
     <%= javascript_include_tag "spec_helper" %>
     <% @specs.each do |spec| %>
-      <%= javascript_include_tag spec.asset_name %>
+      <%= javascript_include_tag spec.path %>
     <% end %>
     <%= csrf_meta_tags %>
   </head>

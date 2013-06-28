@@ -4,7 +4,9 @@ module MochajsRails
     end
 
     def self.all
-      spec_paths.map { |path| new(asset_name(path)) }
+      spec_paths.map do |path|
+        new(MochajsRails::Spec.asset_name(path))
+      end
     end
 
     def self.asset_name(path)

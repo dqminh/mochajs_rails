@@ -3,7 +3,7 @@ module MochajsRails
     layout false
 
     def index
-      @specs = MochajsRails::Spec.find(params[:path] || "")
+      @specs = MochajsRails::Spec.all
     end
   end
 end
