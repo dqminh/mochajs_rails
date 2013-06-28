@@ -13,10 +13,10 @@ Gem::Specification.new do |s|
   s.summary     = "TODO: Summary of MochajsRails."
   s.description = "TODO: Description of MochajsRails."
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
-  s.test_files = Dir["test/**/*"]
+  s.files         = `git ls-files`.split($\)
+  s.test_files    = Dir["test/**/*"]
+  s.require_paths = ['lib']
 
-  s.add_dependency "rails", "~> 4.0.0"
-
-  s.add_development_dependency "sqlite3"
+  s.required_ruby_version = '>= 1.9.2'
+  s.add_dependency 'railties', '>= 3.2.3', "< 5"
 end
