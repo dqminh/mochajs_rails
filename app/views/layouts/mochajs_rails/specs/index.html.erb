@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mocha Test Runner</title>
+    <%= stylesheet_link_tag "mocha" %>
+    <%= javascript_include_tag "mocha" %>
+    <%= javascript_include_tag "sinon-1.7.3" %>
+    <%= javascript_include_tag "chai" %>
+    <%= javascript_include_tag "sinon-chai" %>
+    <%= javascript_include_tag "spec_helper" %>
+    <% @specs.each do |spec| %>
+      <%= javascript_include_tag spec.asset_name %>
+    <% end %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <div id="mocha-fixture"></div>
+  </body>
+</html>
