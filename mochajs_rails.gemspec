@@ -7,11 +7,10 @@ require "mochajs_rails/version"
 Gem::Specification.new do |s|
   s.name        = "mochajs_rails"
   s.version     = MochajsRails::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of MochajsRails."
-  s.description = "TODO: Description of MochajsRails."
+  s.authors     = ["Daniel, Dao Quang Minh"]
+  s.email       = ["dqminh89@gmail.com"]
+  s.summary     = "Mochajs on Rails"
+  s.description = s.summary
 
   s.files         = `git ls-files`.split($\)
   s.test_files    = Dir["test/**/*"]
